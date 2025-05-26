@@ -17,10 +17,10 @@ function App() {
     <Router>
     <PageLoader />
       <Routes>
-        <Route path="/" element={<ProjectsPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/create/new" element={<CreateProjectPage />} />
         <Route path="/projects/:projectId" element={<ManageProjectPage />} />
-        <Route path="/landingpage" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
 
       </Routes>
 
