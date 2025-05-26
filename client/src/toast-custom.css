@@ -1,0 +1,16 @@
+/* Keep dark background, override progress bar and icon color for success toast */
+.Toastify__toast--success {
+  background-color: #0f0f0f !important; /* Keep dark bg */
+  color: #fff !important; /* Text white for contrast */
+}
+
+/* Progress bar color */
+.Toastify__toast--success .Toastify__progress-bar {
+  background: #10b981 !important; /* Cyan */
+}
+
+/* Checkmark icon color override */
+.Toastify__toast--success svg {
+  fill: #10b981 !important; /* Cyan */
+  stroke: #10b981!important; /* Cyan for strokes if any */
+}

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@keyframes pageLoader {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-pageLoader {
+  animation: pageLoader 2.0s linear infinite;
+}
