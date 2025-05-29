@@ -1,5 +1,5 @@
 const db = require('../config/db');
-const generateZapKey = require('../utils/generateZapkey');
+const generateZapKey = require('../utils/generateZapKey');
 const dotenv = require("dotenv");
 const generateSecretKey = require("../utils/generateSecretKey")
 dotenv.config();

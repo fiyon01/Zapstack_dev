@@ -23,13 +23,17 @@ const initiatePayment = async (req, res) => {
     if (!zapStackKey || !phone || !amount) {
       message = "Missing zapStackKey, phone, or amount";
       logPayload = { error: message, zapStackKey, phone, amount };
+      
       throw new Error(message);
     }
 
     if (!validateZapKey(zapStackKey)) {
       message = "Invalid zapStackKey format";
       logPayload = { error: message, zapStackKey };
+
+      
       throw new Error(message);
+
     }
 
     const [rows] = await db.query(
