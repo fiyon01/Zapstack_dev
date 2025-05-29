@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from "react-router-dom"
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import {Link} from "react-router-dom"
 import { useInView } from 'react-intersection-observer';
@@ -315,18 +316,15 @@ curl -X GET \\
 
             <div className="hidden md:block">
               <div className="ml-4 flex items-center md:ml-6">
-                
-                <Link to="/auth/zap-in"> <button className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Sign in</button></Link>
-                <Link to="/dashboard">
-                <motion.button
+                <a href="#login" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Sign in</a>
+                <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                  
                   className="ml-4 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-sm font-medium text-white rounded-md hover:shadow-lg hover:shadow-purple-500/20 transition-all"
                 >
                   Get started
-                </motion.button>
-                </Link>
+                </motion.a>
               </div>
             </div>
 
