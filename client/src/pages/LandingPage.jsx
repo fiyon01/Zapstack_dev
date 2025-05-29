@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from "react-router-dom"
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
-import {Link} from "react-router-dom"
+
 import { useInView } from 'react-intersection-observer';
 import { 
   Zap, Shield, Lock, Key, RefreshCw, Code, Server, CreditCard,
