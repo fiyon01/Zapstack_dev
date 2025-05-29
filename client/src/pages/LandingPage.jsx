@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
+import {Link} from "react-router-dom"
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
+import {Link} from "react-router-dom"
 import { useInView } from 'react-intersection-observer';
 import { 
   Zap, Shield, Lock, Key, RefreshCw, Code, Server, CreditCard,
@@ -308,23 +309,34 @@ curl -X GET \\
                   <a href="#features" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-gray-800/50 rounded-md transition-all">Features</a>
                   <a href="#developers" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-gray-800/50 rounded-md transition-all">For Developers</a>
                   <a href="#pricing" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-gray-800/50 rounded-md transition-all">Pricing</a>
-                  <a href="#docs" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-gray-800/50 rounded-md transition-all">Docs</a>
+                <Link to="/docs"> <button className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Docs</button></Link>
                 </div>
               </div>
             </div>
 
             <div className="hidden md:block">
               <div className="ml-4 flex items-center md:ml-6">
+<<<<<<< HEAD
+                
+                <Link to="/auth/zap-in"> <button className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Sign in</button></Link>
+                <Link to="/dashboard">
+=======
                 <a href="#login" className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Sign in</a>
-                <motion.a
+                <Link to="/">
+>>>>>>> 0601f3de7963f04bf11147b1fcbcd7283c81e9c9
+                <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="#signup"
+                 
                   className="ml-4 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-sm font-medium text-white rounded-md hover:shadow-lg hover:shadow-purple-500/20 transition-all"
                 >
                   Get started
-                </motion.a>
-  
+                </motion.button>
+<<<<<<< HEAD
+                </Link>
+=======
+                 </Link>
+>>>>>>> 0601f3de7963f04bf11147b1fcbcd7283c81e9c9
               </div>
             </div>
 
@@ -356,16 +368,18 @@ curl -X GET \\
               <a href="#features" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Features</a>
               <a href="#developers" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">For Developers</a>
               <a href="#pricing" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Pricing</a>
-              <a href="#docs" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Docs</a>
+                <Link to="/docs"> <button className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Docs</button></Link>
               <div className="pt-4 border-t border-gray-800">
-                <a href="#login" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Sign in</a>
-                <motion.a
+                <Link to="/auth/zap-in"> <button className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-md transition-all">Sign in</button></Link>
+                <Link to="/dashboard">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="#signup"
-                  className="block w-full px-3 py-2 mt-2 text-base font-medium text-center text-white bg-gradient-to-r from-purple-600 to-blue-500 rounded-md hover:shadow-lg hover:shadow-purple-500/20 transition-all"
+                  className="ml-4 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-sm font-medium text-white rounded-md hover:shadow-lg hover:shadow-purple-500/20 transition-all"
                 >
                   Get started
-                </motion.a>
+                </motion.button>
+                </Link>
               </div>
             </div>
           </motion.div>
